@@ -13,6 +13,20 @@ Notes:
 "75%" to 12 would be 9 as opposed to taking off 75% (making 3)).
 - There won't be any awkward decimal numbers, only 0.5 to deal with.
 """
-def mapping(letters):
-    # Your code here
+# Iterate thorugh the list
+# Apply the discount to each of the numbers iterated over.
+# Either assigning the results to a new variable
+    # or try returning the result directly to the user. 
 
+
+def get_discounts(lst, discount):
+    myResult = []
+    
+    for number in lst:
+        myNumber = (number * discount) / 100
+        myResult.append(myNumber)
+    return myResult
+
+print(get_discounts([2, 4, 6, 11], 50))# ➞ [1, 2, 3, 5.5]
+print(get_discounts([10, 20, 40, 80], 75)) #➞ [7.5, 15, 30, 60]
+print(get_discounts([100], 45)) #➞ [45]

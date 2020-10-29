@@ -14,4 +14,14 @@ Notes:
 """
 def mapping(letters):
     # Your code here
+    myDict2 = {}
+    
+    for letter in letters:
+        bob = letter.lower()
+        dave = letter.upper()
+        myDict2[bob] = dave
+    
+    return myDict2
+
+print(mapping(["p", "s"]))
 

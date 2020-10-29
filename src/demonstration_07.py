@@ -11,6 +11,21 @@ Examples:
 - nth_smallest([1, 3, 5, 7], 5) ➞ None
 - nth_smallest([7, 3, 5, 1], 2) ➞ 3
 """
-def nth_smallest(lst, n):
-    # Your code here
+# Ask whether the list has to be sorted or not
+# iterate through the list of elements
 
+myList = [7, 5, 3, 1]
+
+def nth_smallest(lst, n):
+    mySortedList = sorted(lst)
+    
+    if n > len(lst):
+        return None
+    
+    return mySortedList[n -1]
+    
+print(nth_smallest([7, 5, 3, 1], 1))
+print(nth_smallest([1, 3, 5, 7], 3))
+print(nth_smallest([1, 3, 5, 7], 5))
+print(nth_smallest([7, 3, 5, 1], 2))
+        
