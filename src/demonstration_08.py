@@ -10,5 +10,18 @@ Examples:
 - num_args(True, False) ➞ 2
 - num_args({}) ➞ 1
 """
-def num_args():
-    # Your code here
+# def num_args():
+#     # Your code here
+
+
+def csWhereIsBob(names):
+    
+    for name in names[0:]:
+        if name == names["Bob"]:
+            myName = name
+            return myName
+        else:
+            return "Nothing found"
+    return -1
+
+print(csWhereIsBob(["Jimmy", "Layla", "Bob"]))

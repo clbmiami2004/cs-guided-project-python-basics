@@ -20,6 +20,7 @@ def mapping(letters):
         bob = letter.lower()
         dave = letter.upper()
         myDict2[bob] = dave
+        # {bob: "dave"}
     
     return myDict2
 
